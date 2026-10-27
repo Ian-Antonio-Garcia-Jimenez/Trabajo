@@ -17,7 +17,7 @@
 body {
   background-color: #eee9df;
   color: #171717;
-  padding: 50px 20%;
+  padding: 0 20%;
 }
 
 header {
@@ -26,6 +26,7 @@ header {
   align-items: flex-end;
   gap: 40px;
   margin-bottom: 45px;
+  flex-wrap: wrap;
 }
 
 .hijo {

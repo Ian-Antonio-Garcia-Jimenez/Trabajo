@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'DMSans';
+  src: url(fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+  font-family: 'SpaceGrotesk';
+  src: url(fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee9df;
+  color: #171717;
+  padding: 50px 15%;
+}
+
+header {
+  margin-bottom: 35px;
+}
+
+.hijo p {
+  font-family: 'SpaceGrotesk';
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #a14b4b;
+  margin-bottom: 14px;
+}
+
+.hijo h1 {
+  font-family: 'DMSans';
+  font-size: 44px;
+  font-weight: 500;
+  letter-spacing: -2px;
+}
+
+.padre {
+  width: 100%;
+}
+
+.seccion {
+  display: flex;
+  justify-content: center;
+}
+
+.perro {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 750px;
+  border: 1px solid #5c574e5f;
+  background-color: #eee9df;
+}
+
+.contenido:first-child {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.contenido:first-child img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.contenido:first-child:hover img {
+  transform: scale(1.04);
+}
+
+.contenido:last-child {
+  padding: 30px;
+  font-family: 'DMSans';
+}
+
+.perro h4 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  letter-spacing: -0.4px;
+}
+
+.contenido:last-child h4:first-child {
+  margin-top: 0;
+}
+
+.contenido:last-child p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #000;
+}
+
+.contenido a {
+  color: #a14b4b;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 1px solid #a14b4b;
+}
+
+.contenido a:hover {
+  color: #171717;
+  border-color: #171717;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 30px 6%;
+  }
+
+  .hijo h1 {
+    font-size: 36px;
+  }
+
+  .contenido:first-child {
+    height: 230px;
+  }
+
+  .contenido:last-child {
+    padding: 20px;
+  }
+
+  .perro h4 {
+    font-size: 16px;
+  }
+}

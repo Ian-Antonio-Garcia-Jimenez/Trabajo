@@ -1,0 +1,84 @@
+
+.adopcion {
+    max-width: 650px;
+    margin: 40px auto;
+    font-family: 'DMSans';
+}
+
+.adopcion h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.adopcion > p {
+    color: #777;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+#formAdopcion {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#formAdopcion label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#formAdopcion input,
+#formAdopcion select,
+#formAdopcion textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bdb6aa;
+    background-color: #f8f5ef;
+    font-family: 'DMSans';
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+#formAdopcion .aceptar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: normal;
+}
+
+#formAdopcion .aceptar input {
+    width: auto;
+}
+
+#formAdopcion button {
+    padding: 14px;
+    background-color: #a14b4b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#formAdopcion button:hover {
+    background-color: #793737;
+}
+
+#mensaje.exito {
+    color: #287545;
+    padding: 12px;
+    background-color: #e1f2e5;
+}
+
+#mensaje.error {
+    color: #a14b4b;
+}
+
+@media (max-width: 600px) {
+    .adopcion {
+        margin: 30px 0;
+    }
+
+    .adopcion h1 {
+        font-size: 28px;
+    }
+}

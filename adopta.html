@@ -1,19 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adopccion</title>
-    <link href="style.css" rel="stylesheet" />
+    <title>Adopta una mascota</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="adopta.css" rel="stylesheet">
 </head>
 <body>
+
     <div class="barra">
-      <nav>
-        <a href="html.html">inicio</a>
-        <a href="adopta.html">adopta una<br> mascota</a>
-        <a href="conocenos.html">Aserca de nosotros</a>
-      </nav>
+        <nav>
+            <a href="html.html">Inicio</a>
+            <a href="adopta.html">Adopta una mascota</a>
+            <a href="conocenos.html">Acerca de nosotros</a>
+        </nav>
     </div>
-    
+
+    <main class="adopcion">
+        <h1>Adopta un compañero de vida</h1>
+        <p>Completa el formulario para iniciar tu proceso de adopción.</p>
+
+        <form id="formAdopcion">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" required minlength="3">
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" required
+                   pattern="[0-9]{10}" maxlength="10"
+                   placeholder="10 dígitos">
+
+            <label for="perro">¿Qué perro te interesa?</label>
+            <select id="perro" required>
+                <option value="">Selecciona una raza</option>
+                <option>Golden Retriever</option>
+                <option>Bulldog Francés</option>
+                <option>Border Collie</option>
+                <option>Beagle</option>
+                <option>Husky Siberiano</option>
+                <option>Dachshund</option>
+                <option>Caniche</option>
+                <option>Corgi Galés</option>
+            </select>
+
+            <label for="vivienda">Tipo de vivienda:</label>
+            <select id="vivienda" required>
+                <option value="">Selecciona una opción</option>
+                <option>Casa propia</option>
+                <option>Casa rentada</option>
+                <option>Departamento</option>
+            </select>
+
+            <label for="experiencia">¿Has tenido perros?</label>
+            <select id="experiencia" required>
+                <option value="">Selecciona una opción</option>
+                <option>Sí</option>
+                <option>No</option>
+            </select>
+
+            <label for="motivo">¿Por qué quieres adoptar?</label>
+            <textarea id="motivo" rows="4" required minlength="10"></textarea>
+
+            <label class="aceptar">
+                <input type="checkbox" id="compromiso" required>
+                Me comprometo a cuidar responsablemente a la mascota.
+            </label>
+
+            <button type="submit">Enviar solicitud</button>
+            <p id="mensaje" aria-live="polite"></p>
+        </form>
+    </main>
+
+    <script src="java.js"></script>
 </body>
 </html>

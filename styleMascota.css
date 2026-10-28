@@ -22,6 +22,33 @@ body {
 
 header {
   margin-bottom: 35px;
+  flex-wrap: wrap;
+}
+
+.barra {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: 20px 5%;
+  background-color: #eee9df;
+  margin-bottom: 40px;
+}
+
+.barra nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.barra nav a {
+  color: #a14b00;
+  font-family: 'SpaceGrotesk';
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.barra nav a:hover {
+  color: #a14b4b;
 }
 
 .hijo p {
